@@ -14,6 +14,21 @@ describe('Go to rozetka page', function () {
         browser.waitForAngularEnabled(false);
         browser.get(rozetkaPage.rozetkaUrl);
         browser.sleep(3000);
+        let popup = element(by.css(".popup-close"));
+        popup.isDisplayed().then(function (exists) {
+            if (exists) {
+                popup.click();
+            } else {
+            }
+        let newPopup = element(by.css(".exponea-close"));
+            newPopup.isDisplayed().then(function (exists) {
+            if (exists) {
+            newPopup.click();
+            } else {
+                }
+            });
+        });
+        browser.sleep(4000);
         const note = element(by.css(rozetkaPage.howerOnElements));
         browser.actions().mouseMove(note).perform();
         browser.sleep(1000);
