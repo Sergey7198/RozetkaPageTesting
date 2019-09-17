@@ -1,0 +1,20 @@
+{
+  "name": "rozetka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor conf.js",
+    "prestart-webdriver": "webdriver-manager update --versions.standalone 3.9.1 --versions.chrome 2.44",
+    "start-webdriver": "webdriver-manager start --versions.standalone 3.9.1 --versions.chrome 2.44"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^5.1.0",
+    "protractor": "^5.4.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
